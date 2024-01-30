@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website | Home</title>
+<!-- Add these links in the head of your HTML file for Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="my logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop Now</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to Our Website</h1>
+            <div class ="buttongroup">
+                <button>Shop Now</button>
+                <button>Learn More</button>    
+            </div>
+        </section>
+        <!-- bootstrap needed section -->
+        <section id="testimony-section" class="container-fluid">
+            <h1 class="text-center mb-4">Testimonials</h1>
+        
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimony text-center">
+                            <p>"Great products! I've been a customer for years."</p>
+                            <p>- John Doe</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony text-center">
+                            <p>"Excellent service and fast shipping."</p>
+                            <p>- Jane Smith</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony text-center">
+                            <p>"The quality of their products is unmatched."</p>
+                            <p>- Alex Johnson</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Contact Us at 321-4567-8910<br>
+            Email Us at example@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
