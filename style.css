@@ -16,6 +16,9 @@
 ol,ul{
     padding-left: 20px;
 }
+img{
+    max-width: 100%;
+}
 /* end of reset vals */
 body{
     font-family: var(--demo-font);
@@ -105,6 +108,19 @@ footer{
     display: grid;
     align-content: center;
     justify-content: center;
+    justify-items: center;
+    padding: 20px;
     min-height: 100vh;
+}
 
+#videosection img, p{
+    width: 560px;
+}
+#videosection h2{
+    margin-top: 10px;
+}
+#videosection img{
+    object-fit: cover;
+    object-position: top left;
+    height: 315px;
 }
