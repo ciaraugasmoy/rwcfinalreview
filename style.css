@@ -100,3 +100,11 @@ footer{
     padding-top: 10px;
     background-color: var(--accent-color-2);
 }
+
+#videosection{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
