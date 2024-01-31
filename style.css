@@ -32,11 +32,11 @@ header{
     padding: var(--demo-padding);
     min-height: 20vh;
     display: grid;
-    grid-template-columns: auto 2fr; 
+    grid-template-columns: auto 1fr; 
 }
 header img {
-    height: 100px;
     width: 100px;
+    height: 100px;
     align-self: center;
     padding: 2px;
     background-color: var(--accent-color);
@@ -57,6 +57,44 @@ header nav a{
     border-radius: 10px;
     background-color: var(--accent-color);
 }
+#menuicon{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    header{
+        grid-template-columns: 40px 1fr; 
+        min-height: 30px;
+    }
+    header img{
+        width: 35px;
+        height: 35px;
+    }
+    header nav{
+        display: none;
+        position: absolute; 
+        top:0px;
+        width: 100%;
+        background-color: var(--accent-color);
+        padding-top: 35px;
+    }
+    header nav a{
+        display: block;
+        border-radius:0;
+    }
+    #menuicon{
+        display: block;
+        position: absolute;
+        /* background-color: var(--font-color-light); */
+        top: 5px;
+        right: 5px;
+        z-index: 2;
+        border-radius: 3px;
+    }
+    #menuicon:hover{
+        background-color: rgba(255, 255, 255, 0.607);
+    }
+}
+
 footer{
     padding: var(--demo-padding);
     background-color: var(--footer-bg);
@@ -151,7 +189,7 @@ footer{
     #videosection > *{
         max-width: 95vw;
     }
-    #videosection img, #videosection iframe{
+    #videosection img{
         height: auto;
     }
 }
